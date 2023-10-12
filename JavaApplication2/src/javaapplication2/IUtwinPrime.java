@@ -9,7 +9,7 @@ class TwinPrime{
           }
           
           else{
-              for(int i = 2; i * i <= num; i++){
+              for(int i = 2;i* i <= num; i++){
                   if(num % i == 0){
                       return false;
                   }
@@ -40,6 +40,6 @@ public class IUtwinPrime {
       Boolean b = TP.isPrime(r);
       System.out.println(b);
       
-      
+      TP.show(r);
   }
 }
