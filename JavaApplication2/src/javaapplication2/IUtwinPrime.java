@@ -4,18 +4,26 @@ import java.util.Scanner;
 
 class TwinPrime{
       public Boolean isPrime(int num){
-          if(num<=1){
-              return false;
-          }
-          
-          else{
-              for(int i = 2;i* i <= num; i++){
-                  if(num % i == 0){
-                      return false;
-                  }
+          int div =2;
+          while(div<num){
+              if(num%div==0){
+                  return false;
               }
-              return true;
+              div = div + 1;
           }
+          return true;
+//          if(num<=1){
+//              return false;
+//          }
+          
+//          else{
+//              for(int i = 2;i* i <= num; i++){
+//                  if(num % i == 0){
+//                      return false;
+//                  }
+//              }
+//              return true;
+//          }
       } 
       public void show(int n){
           for(int i = 2;  i<=n-2;  i++){

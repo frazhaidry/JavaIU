@@ -19,7 +19,7 @@ public class IUprime {
        // n = 3
        // n = 5
        while(div<n){// true // true // false 
-            if(n%div == 0){ // 4%2 == 0? yes // 3%2 ==0? No
+            if(n%div == 0){  // 4%2 == 0? yes // 3%2 ==0? No
                 // print Not prime 
                 System.out.println(" Not prime ");
                 
